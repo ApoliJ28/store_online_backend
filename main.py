@@ -3,7 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
 from dotenv import dotenv_values
 from database import engine
-from src.users import models as model_user
+from users import models as model_user
 from routes import users, auth
 
 config = dotenv_values(".env")

@@ -1,11 +1,11 @@
 from typing import Annotated
 from fastapi import APIRouter, Depends, HTTPException, status
-from src.users.models import Users
+from users.models import Users
 from database import SessionLocal
 from sqlalchemy.orm import Session
 from .auth import get_current_user
 from passlib.context import CryptContext
-from src.users.schemas import UserVerification
+from users.schemas import UserVerification
 
 router = APIRouter(
     prefix='/api//users',
